@@ -7,6 +7,9 @@ export const links = {
   resume: "/vaibhav-pal-resume.pdf",
 };
 
+// Paste a public Spotify playlist link here. Leave it empty to hide the music panel.
+export const spotifyPlaylist = "https://open.spotify.com/playlist/5mL3u6dPMou3EjJnkiQjwD";
+
 export type Moment = {
   src: string;
   width: number;
