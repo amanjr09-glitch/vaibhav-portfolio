@@ -1,9 +1,13 @@
+import GithubHeatmap from "@/components/GithubHeatmap";
 import MomentsReel from "@/components/MomentsReel";
 import PenStrokes from "@/components/PenStrokes";
 import ThemeToggle from "@/components/ThemeToggle";
 import { links } from "@/lib/content";
+import { getContributions } from "@/lib/github";
 
-export default function Home() {
+export default async function Home() {
+  const days = await getContributions("amanjr09-glitch");
+
   return (
     <div className="wrap">
       <header className="top">
@@ -13,6 +17,7 @@ export default function Home() {
             <a href="#experience">Experience</a>
             <a href="#founder">Founder</a>
             <a href="#skills">Skills</a>
+            {days && <a href="#github">GitHub</a>}
             <a href="#moments">Moments</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -246,6 +251,19 @@ export default function Home() {
           <div className="row"><dt>2018 – 2021</dt><dd>Diploma, Computer Science <span>· NIT Longowal</span></dd></div>
         </dl>
       </section>
+
+      {days && (
+        <section id="github">
+          <div className="head">
+            <div>
+              <h2>On GitHub</h2>
+              <span className="hand note" aria-hidden="true">the commit diary</span>
+            </div>
+            <p>A year of commits, pull requests and reviews, pulled straight from my GitHub profile.</p>
+          </div>
+          <GithubHeatmap days={days} profile={links.github} />
+        </section>
+      )}
 
       <section id="moments">
         <div className="head">
