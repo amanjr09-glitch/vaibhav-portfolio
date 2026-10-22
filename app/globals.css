@@ -212,3 +212,6 @@ footer{margin-top:96px;padding-top:24px;border-top:1px solid var(--line);display
   .arrows{display:none}
   footer{flex-direction:column;gap:6px;margin-top:64px}
 }
+
+.job .promo{display:block;margin-top:10px;font-size:19px;transform:rotate(-3deg);transform-origin:left}
+.job .was{margin-top:4px;font-size:15px;color:var(--ink-3)}

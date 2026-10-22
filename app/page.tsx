@@ -88,18 +88,24 @@ export default function Home() {
             <h2>Experience</h2>
             <span className="hand note" aria-hidden="true">the day job (I like it too)</span>
           </div>
-          <p>Four roles since 2022, all remote, for teams in San Francisco, Malta and India.</p>
+          <p>Shipping since 2021, almost all of it remote, for teams in the US, Malta, Singapore and India.</p>
         </div>
 
         <article className="job">
-          <p className="when">Nov 2024 – Present<small>San Francisco · Remote</small></p>
+          <p className="when">
+            Nov 2024 – Present<small>Denver, Colorado · Remote</small>
+            <span className="hand promo">promoted Apr 2026!</span>
+          </p>
           <div>
             <h3>
               <img className="logo" src="/img/logos/delightree.png" alt="" width={128} height={128} />
               Delightree <span>· Senior Software Engineer</span>
               <span className="now">Current</span>
             </h3>
+            <p className="was">Software Engineer, Nov 2024 – Apr 2026</p>
             <ul>
+              <li>Building and running agentic AI flows that are part of the team&apos;s daily development work.</li>
+              <li>Built internal developer tooling with modern AI tools, speeding up the whole engineering team.</li>
               <li>Refactored a legacy frontend from prop drilling to a shared state architecture.</li>
               <li>Built an in-platform error-resolution flow that reduced customer drop-off.</li>
               <li>Shipped major features across several quarters with <strong>100% on-time delivery</strong>.</li>
@@ -108,14 +114,14 @@ export default function Home() {
           </div>
         </article>
         <article className="job">
-          <p className="when">May 2023 – Nov 2024<small>Malta · Remote</small></p>
+          <p className="when">Jun 2023 – Nov 2024<small>San Gwann, Malta · Hybrid</small></p>
           <div>
             <h3>
               <img className="logo" src="/img/logos/sheetsway.png" alt="" width={128} height={128} />
-              Sheetsway <span>· Full Stack Developer</span>
+              Sheetsway <span>· Software Engineer</span>
             </h3>
             <ul>
-              <li>Core team while the audit platform scaled to a <strong>$15M valuation</strong>.</li>
+              <li>Core team while the AI audit platform scaled to a <strong>$15M valuation</strong>.</li>
               <li>Made the platform AI-native, so most tasks take a single click.</li>
               <li>Kept average page loads <strong>under 3 seconds</strong> and cut bounce rate by over 4%.</li>
               <li>Raised engagement <strong>10%</strong> and cut user errors 5% with clearer navigation.</li>
@@ -123,27 +129,51 @@ export default function Home() {
           </div>
         </article>
         <article className="job">
-          <p className="when">Nov 2022 – May 2023<small>Gurgaon · Remote</small></p>
+          <p className="when">Nov 2022 – May 2023<small>Singapore · Remote</small></p>
           <div>
             <h3>
               <img className="logo" src="/img/logos/elpha.png" alt="" width={128} height={128} />
-              Elpha AI <span>· Full Stack Engineer</span>
+              Elpha AI <span>· Full-stack Developer</span>
             </h3>
             <ul>
-              <li>Built responsive web products for AI-driven projects.</li>
-              <li>Integrated AI features with cross-functional teams and maintained the company sites.</li>
+              <li>Built the first version of Sheetsway, an AI product for the audit industry, before joining Sheetsway directly.</li>
+              <li>Shipped responsive, user-friendly UIs with React and Firebase.</li>
             </ul>
           </div>
         </article>
         <article className="job">
-          <p className="when">Mar 2022 – Nov 2022<small>Bangalore · Remote</small></p>
+          <p className="when">Jul 2022 – Nov 2024<small>Remote</small></p>
+          <div>
+            <h3>
+              <img className="logo" src="/img/logos/upwork.png" alt="" width={48} height={48} />
+              Upwork <span>· Freelance</span>
+            </h3>
+            <ul>
+              <li>Freelance full-stack work for clients alongside my full-time roles, with Firebase, Tailwind and more.</li>
+            </ul>
+          </div>
+        </article>
+        <article className="job">
+          <p className="when">Mar 2022 – Nov 2022<small>Bengaluru · Remote · Part-time</small></p>
           <div>
             <h3>
               <span className="logo mono" aria-hidden="true">LA</span>
-              LA Technologies <span>· Web Developer</span>
+              LA Technologies <span>· Full-stack Web Developer</span>
             </h3>
             <ul>
-              <li>Worked directly with clients, turning their goals into scoped, shipped builds.</li>
+              <li>Built client projects end to end and delivered exactly what each client needed.</li>
+            </ul>
+          </div>
+        </article>
+        <article className="job">
+          <p className="when">Dec 2021 – Nov 2022<small>Part-time</small></p>
+          <div>
+            <h3>
+              <span className="logo mono" aria-hidden="true">K</span>
+              Konoha Technologies <span>· Software Developer</span>
+            </h3>
+            <ul>
+              <li>Full-stack and app development with React, Node.js, Flutter, React Native and Firebase.</li>
             </ul>
           </div>
         </article>
@@ -166,7 +196,7 @@ export default function Home() {
         <article className="chapter">
           <div>
             <h3>WearTheVibe</h3>
-            <p className="meta">Founder · ~2022 to 2024</p>
+            <p className="meta">Founder · Nov 2022 to Jul 2023</p>
             <span className="pill">Paused</span>
             <span className="hand">ran it next to a full-time job</span>
           </div>
