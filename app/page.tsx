@@ -261,7 +261,7 @@ export default async function Home() {
             </div>
             <p>A year of commits, pull requests and reviews, pulled straight from my GitHub profile.</p>
           </div>
-          <GithubHeatmap days={days} profile={links.github} />
+          <GithubHeatmap initial={days} user="amanjr09-glitch" profile={links.github} />
         </section>
       )}
 

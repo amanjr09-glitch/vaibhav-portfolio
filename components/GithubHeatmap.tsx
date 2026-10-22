@@ -1,9 +1,27 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import type { Day } from "@/lib/github";
 
 const fmt = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 const month = new Intl.DateTimeFormat("en-GB", { month: "short", timeZone: "UTC" });
 
-export default function GithubHeatmap({ days, profile }: { days: Day[]; profile: string }) {
+// Live counts come from a public mirror of GitHub's calendar (GitHub itself blocks browser requests).
+// The build-time snapshot renders first and stays if the mirror is unreachable.
+const live = (user: string) => `https://github-contributions-api.jogruber.de/v4/${user}?y=last`;
+
+export default function GithubHeatmap({ initial, user, profile }: { initial: Day[]; user: string; profile: string }) {
+  const [days, setDays] = useState(initial);
+
+  useEffect(() => {
+    fetch(live(user))
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d: { contributions?: Day[] } | null) => {
+        if (d?.contributions?.length) setDays(d.contributions);
+      })
+      .catch(() => {});
+  }, [user]);
+
   const total = days.reduce((n, d) => n + d.count, 0);
   const lead = new Date(days[0].date + "T00:00:00Z").getUTCDay(); // calendar starts on a Sunday row
   const weeks = Math.ceil((lead + days.length) / 7);
