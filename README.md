@@ -1,22 +1,26 @@
 # Vaibhav Pal: portfolio
 
-A single static page in `public/`, hosted on Firebase Hosting.
+A one-page Next.js site, exported as static files and hosted on Firebase Hosting.
 
-## Preview locally
+## Develop
 
 ```sh
-npx serve public
+npm install
+npm run dev        # http://localhost:3000
 ```
 
 ## Deploy
 
 ```sh
+npm run build      # writes the static site to out/
 npm i -g firebase-tools
 firebase login
-firebase use --add      # pick or create your Firebase project
+firebase use --add # pick or create your Firebase project (first time only)
 firebase deploy --only hosting
 ```
 
-## Add a personal moment
+## Edit content
 
-Drop a photo in `public/img/moments/` and copy one of the `<figure class="snap">` lines in `public/index.html`.
+- Contact links and personal moments: `lib/content.ts`
+- Everything else on the page: `app/page.tsx`
+- To add a moment, drop the photo in `public/img/moments/` and add one line to `moments` in `lib/content.ts`.
