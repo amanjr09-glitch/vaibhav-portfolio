@@ -1,10 +1,9 @@
 // Everything a visitor reads lives here. Edit this file to change the page.
 
-// TODO: real email address, LinkedIn and GitHub URLs
 export const links = {
-  email: "#",
-  linkedin: "#",
-  github: "#",
+  email: "mailto:atsyt09@gmail.com",
+  linkedin: "https://www.linkedin.com/in/vaibhav-pal-8411a0160/",
+  github: "https://github.com/amanjr09-glitch",
   resume: "/vaibhav-pal-resume.pdf",
 };
 

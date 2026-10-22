@@ -126,7 +126,7 @@ export default function Home() {
           <p className="when">Nov 2022 – May 2023<small>Gurgaon · Remote</small></p>
           <div>
             <h3>
-              <span className="logo mono" aria-hidden="true">E</span>
+              <img className="logo" src="/img/logos/elpha.png" alt="" width={128} height={128} />
               Elpha AI <span>· Full Stack Engineer</span>
             </h3>
             <ul>
@@ -244,8 +244,8 @@ export default function Home() {
           <a className="btn" href={links.resume} download>Download résumé</a>
         </div>
         <div className="links">
-          <a href={links.linkedin}>LinkedIn</a>
-          <a href={links.github}>GitHub</a>
+          <a href={links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href={links.github} target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
         <footer>
           <span>Vaibhav Pal · Bengaluru, India</span>
