@@ -7,3 +7,5 @@ designs/
 out/
 next-env.d.ts
 *.tsbuildinfo
+*.log
+.firebaserc
