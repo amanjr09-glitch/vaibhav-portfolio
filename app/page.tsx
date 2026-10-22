@@ -1,7 +1,7 @@
 import GithubHeatmap from "@/components/GithubHeatmap";
 import MomentsReel from "@/components/MomentsReel";
 import PenStrokes from "@/components/PenStrokes";
-import SpotifyPanel from "@/components/SpotifyPanel";
+import MusicWidget from "@/components/MusicWidget";
 import ThemeToggle from "@/components/ThemeToggle";
 import { links, spotifyPlaylist } from "@/lib/content";
 import { getContributions } from "@/lib/github";
@@ -275,7 +275,6 @@ export default async function Home() {
           <p>Football, the gym, games and trips with the people who keep the ride fun. Building things is better when you&apos;ve got a life outside them.</p>
         </div>
         <MomentsReel />
-        {spotifyPlaylist && <SpotifyPanel url={spotifyPlaylist} />}
       </section>
 
       <section id="contact" className="contact">
@@ -304,6 +303,7 @@ export default async function Home() {
       </section>
 
       <PenStrokes />
+      {spotifyPlaylist && <MusicWidget url={spotifyPlaylist} />}
     </div>
   );
 }
