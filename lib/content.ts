@@ -5,6 +5,7 @@ export const links = {
   linkedin: "https://www.linkedin.com/in/vaibhav-pal-8411a0160/",
   github: "https://github.com/amanjr09-glitch",
   resume: "/vaibhav-pal-resume.pdf",
+  paxel: "https://paxel.ycombinator.com/results/cc8mruxb",
 };
 
 // Paste a public Spotify playlist link here. Leave it empty to hide the music panel.

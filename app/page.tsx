@@ -19,6 +19,7 @@ export default async function Home() {
             <a href="#founder">Founder</a>
             <a href="#skills">Skills</a>
             {days && <a href="#github">GitHub</a>}
+            <a href="#ai">AI</a>
             <a href="#moments">Moments</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -265,6 +266,25 @@ export default async function Home() {
           <GithubHeatmap initial={days} user="amanjr09-glitch" profile={links.github} />
         </section>
       )}
+
+      <section id="ai">
+        <div className="head">
+          <div>
+            <h2>How I build with AI</h2>
+            <span className="hand note" aria-hidden="true">graded by YC&apos;s Paxel</span>
+          </div>
+          <p>Paxel by Y Combinator read my Claude Code history on one product and scored how I work with agents.</p>
+        </div>
+        <dl className="rows">
+          <div className="row"><dt>Builder type</dt><dd>Deep Worker <span>· 65% of work blocks ran over 90 minutes</span></dd></div>
+          <div className="row"><dt>Output</dt><dd>1,000 commits and 74 PRs <span>· 399 features, 276 fixes</span></dd></div>
+          <div className="row"><dt>Planning</dt><dd>61% of build sessions started from a plan</dd></div>
+          <div className="row"><dt>Longest streak</dt><dd>13 consecutive days of shipping</dd></div>
+        </dl>
+        <div className="btns">
+          <a className="btn" href={links.paxel} target="_blank" rel="noopener noreferrer">Read the full report</a>
+        </div>
+      </section>
 
       <section id="moments">
         <div className="head">
